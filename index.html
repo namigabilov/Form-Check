@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
@@ -17,24 +18,39 @@
     </head>
     <body>
         <div class="signInForm ">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <h3>Sign In</h3>
-                <span>Username</span>
-                <input class="hover" type="text" placeholder="Enter Your Name..." name="" id="name">
-                <h6 id="invalidName">Daxil Edilən Ad Structura Uygun Deyil !</h6>
-                <span>Email</span>
-                <input class="hover" type="text" placeholder="Enter Your Email..." name="" id="email">
-                <h6 id="invalidEmail">Daxil Edilən Email Structura Uygun Deyil !</h6>
-                <span>Password</span>
-                <input class="hover" type="text" placeholder="Enter Your Password... " name="" id="password">
-                <h6 id="invalidPassword">Daxil Edilən Password Structura Uygun Deyil !</h6>
-                <div class="buttons">
-                    <button id="button">Sign In</button>
-                    <button><a href="register.html" id="button">Register</a></button>
-                </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <h4 style="font-size: 30px; text-align: center; color: aqua;">Sign In</h4>
+            <span>Username</span>
+            <input
+                class="hover"
+                type="text"
+                placeholder="Enter Your Name..."
+                name=""
+                id="name1">
+            <h6 id="invalidName">Daxil Edilən Ad Tapılmadı !</h6>
+            <span>Email</span>
+            <input
+                class="hover"
+                type="text"
+                placeholder="Enter Your Email..."
+                name=""
+                id="email1">
+            <h6 id="invalidEmail">Daxil Edilən Email Tapılmadı !</h6>
+            <span>Password</span>
+            <input
+                class="hover"
+                type="password"
+                placeholder="Enter Your Password... "
+                name=""
+                id="password1">
+                <i id="eye" class="fa-solid fa-eye"></i>
+            <h6 id="invalidPassword">Daxil Edilən Password Düzgün Deyil !</h6>
+            <a onclick="SignIn()" id="button">Sign In</a>
+            <h3>You dont Have an Account? Create One !</h3>
+            <a href="register.html" id="register">Register</a>
         </div>
         <script src="Js/app.js"></script>
     </body>

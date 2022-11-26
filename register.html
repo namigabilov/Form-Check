@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Css/style.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Css/register.css">
         <title>Register</title>
     </head>
     <body>
@@ -14,7 +14,7 @@
             <span></span>
             <span></span>
             <span></span>
-            <h3>Sign In</h3>
+            <h3>Register</h3>
             <span>Username</span>
             <input
                 class="hover"
@@ -34,24 +34,22 @@
            <span>Password</span> 
             <input
                 class="hover"
-                type="text"
+                type="password"
                 placeholder="Enter Your Password... "
                 name=""
                 id="password">
+                <h6 id="invalidPassword">Daxil Edilən Password Structura Uygun Deyil !</h6>
                 <span>Retype Password</span> 
-            <input
+                <input
                 class="hover"
-                type="text"
-                placeholder="Enter Your Password... "
+                type="password"
+                placeholder="Enter Your Password..."
                 name=""
-                id="password">
-            <h6 id="invalidPassword">Daxil Edilən Password Structura Uygun Deyil !</h6>
-            <div class="buttons">
-                <button id="button">
-                    <a href="index.html">Sign In</a>
-                </button>
-                <button>Register</button>
-            </div>
+                id="retypePassword">
+                <i id="eye" class="fa-solid fa-eye"></i>
+                <h6 id="notSamePassword">Şifrələri Eyni Daxil Edin !!!</h6>
+                <button id="register">Register</button>
+                <a id="foward" href="index.html">Go Sign In</a>
         </div>
         <script src="Js/register.js"></script>
     </body>
